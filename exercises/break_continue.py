@@ -18,4 +18,10 @@ def skip_multiples_of_three(n):
     - 从1到n中所有不是3的倍数的整数列表
     """
     # 请在下方编写代码
-    pass 
+    ans = []
+    for i in range(n):
+        if i % 3 == 0:
+            continue
+        else:
+            ans.append(i)
+    return ans
