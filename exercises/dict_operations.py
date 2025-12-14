@@ -19,6 +19,21 @@ def student_dict_operations(students_dict, operation, *args):
     返回:
     - 根据操作返回不同结果
     """
+    if operation == "add":
+        name,score = args
+        students_dict[name] = score
+    elif operation == "remove":
+        name = args[0]
+        del students_dict[name]
+    elif operation == "update":
+        name,score = args
+        students_dict[name] = score
+    elif operation == "get":
+        name = args[0]
+        if name in students_dict:
+            return students_dict[name]
+    return students_dict
+
     # # 请在下方编写代码
     # if operation == "add":
     #     if len(args) != 2:
