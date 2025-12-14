@@ -19,7 +19,7 @@ def skip_multiples_of_three(n):
     """
     # 请在下方编写代码
     ans = []
-    for i in range(n+1):
+    for i in range(1,n+1):
         if i % 3 == 0:
             continue
         else:
